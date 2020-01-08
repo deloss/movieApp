@@ -12,9 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.movieapp.R
 import com.example.movieapp.data.api.TheMovieDBClient
 import com.example.movieapp.data.repository.NetworkState
+import com.example.movieapp.ui.LoggedActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : LoggedActivity() {
 
     private lateinit var viewModel : MainActivityViewModel
 
