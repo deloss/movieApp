@@ -1,7 +1,5 @@
 package com.example.movieapp.ui.popular_movies
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
@@ -12,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.movieapp.R
 import com.example.movieapp.data.api.TheMovieDBClient
 import com.example.movieapp.data.repository.NetworkState
-import com.example.movieapp.ui.LoggedActivity
+import com.example.movieapp.ui.login.LoggedActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : LoggedActivity() {

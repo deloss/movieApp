@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.popular_movies.LoginActivity"
     android:orientation="vertical">
 
     <EditText
@@ -18,5 +17,16 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Password"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"/>
+
+    <TextView
+        android:id="@+id/login_info"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
 
 </LinearLayout>
