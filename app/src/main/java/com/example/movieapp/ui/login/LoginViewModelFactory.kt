@@ -14,14 +14,11 @@
  * limitations under the License.
  */
 
-package com.example.movieapp.ui
+package com.example.movieapp.ui.login
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.movieapp.data.database.UserDB
-import com.example.movieapp.data.database.UserDao
-import com.example.movieapp.ui.login.LoginViewModel
 
 /**
  * Factory for ViewModels
@@ -34,4 +31,5 @@ class LoginViewModelFactory(private val context : Context) : ViewModelProvider.F
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
+
 }

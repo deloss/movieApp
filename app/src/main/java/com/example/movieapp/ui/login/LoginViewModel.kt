@@ -35,4 +35,9 @@ class LoginViewModel(context : Context) : ViewModel() {
 
     }
 
+    override fun onCleared() {
+        super.onCleared()
+        compositeDisposable.dispose()
+    }
+
 }
