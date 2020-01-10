@@ -43,12 +43,15 @@ class SingleMovie : AppCompatActivity() {
     }
 
     fun bindUI(it : MovieDetails) {
+        movie_title.text = it.title
+        movie_tagline.text = it.tagline
         movie_release_date.text = it.releaseDate
         movie_rating.text = it.rating.toString()
         movie_runtime.text = it.runtime.toString() + " minutes"
         val formatCurrency = NumberFormat.getCurrencyInstance(Locale.US)
         movie_budget.text = formatCurrency.format(it.budget)
         movie_revenue.text = formatCurrency.format(it.revenue)
+        movie_overview.text = it.overview
 
         val moviePosterURL = POSTER_BASE_URL + it.posterPath
         Glide.with(this).load(moviePosterURL).into(iv_movie_poster)

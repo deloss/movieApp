@@ -14,8 +14,13 @@ import com.example.movieapp.data.api.POSTER_BASE_URL
 import com.example.movieapp.data.repository.NetworkState
 import com.example.movieapp.data.vo.Movie
 import com.example.movieapp.ui.movie_details.SingleMovie
+import kotlinx.android.synthetic.main.activity_single_movie.view.*
 import kotlinx.android.synthetic.main.movie_list_item.view.*
+import kotlinx.android.synthetic.main.movie_list_item.view.movie_release_date
+import kotlinx.android.synthetic.main.movie_list_item.view.movie_title
 import kotlinx.android.synthetic.main.network_state_item.view.*
+import kotlinx.android.synthetic.main.network_state_item.view.progress_bar
+import kotlinx.android.synthetic.main.network_state_item.view.txt_error
 
 class PopularMoviesPagedListAdapter(public val context : Context) : PagedListAdapter<Movie, RecyclerView.ViewHolder>(MovieDiffCallback()) {
 
