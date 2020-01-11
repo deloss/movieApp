@@ -16,6 +16,7 @@
         android:id="@+id/password_field"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:inputType="textPassword"
         android:hint="Password"/>
 
     <Button
